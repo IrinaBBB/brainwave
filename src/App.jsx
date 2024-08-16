@@ -1,3 +1,6 @@
+import ButtonGradient from './assets/svg/ButtonGradient.jsx'
+import Button from './components/Button.jsx'
+
 function App() {
 
     return (
@@ -5,6 +8,12 @@ function App() {
             <h1 className='text-3xl font-bold underline'>
                 Hello world!
             </h1>
+            <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+                <Button className="mt-10" href="#login">
+                    something
+                </Button>
+            </div>
+            <ButtonGradient/>
         </>
     )
 }
