@@ -6,6 +6,7 @@ import Button from './Button.jsx'
 import { HamburgerMenu } from './design/Header.jsx'
 import MenuSvg from '../assets/svg/MenuSvg.jsx'
 import { disablePageScroll, enablePageScroll } from 'scroll-lock'
+import ButtonGradient from '../assets/svg/ButtonGradient.jsx'
 
 
 function Header() {
@@ -54,10 +55,12 @@ function Header() {
                 <Button className='hidden lg:flex' href='#login'>
                     Sign In
                 </Button>
+                <ButtonGradient />
                 <Button className='ml-auto lg:hidden' px='px-3' onClick={toggleNavigation}>
                     <MenuSvg openNavigation={openNavigation} />
                 </Button>
             </div>
+
         </div>
     )
 }
